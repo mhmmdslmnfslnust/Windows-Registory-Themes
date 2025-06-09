@@ -1,0 +1,64 @@
+Windows Registry Editor Version 5.00
+
+; --- Control Panel Colors ---
+[HKEY_CURRENT_USER\Control Panel\Colors]
+"Window"="35 20 20"
+"WindowText"="255 255 255"
+"ButtonFace"="60 15 15"
+"ButtonText"="255 255 255"
+"Hilight"="180 30 30"
+"HilightText"="255 255 255"
+"HotTrackingColor"="220 40 40"
+"Menu"="45 10 10"
+"MenuText"="255 255 255"
+"MenuHilight"="160 25 25"
+"Scrollbar"="120 20 20"
+"ActiveTitle"="140 20 20"
+"GradientActiveTitle"="190 30 30"
+"InactiveTitle"="100 15 15"
+"TitleText"="255 255 255"
+"InfoWindow"="250 230 230"
+"InfoText"="130 20 20"
+"3DObjects"="60 15 15"
+"Desktop"="40 10 10"
+"GrayText"="180 180 180"
+"Background"="40 10 10"
+"AppWorkspace"="50 12 12"
+"ButtonShadow"="40 8 8"
+"ButtonDkShadow"="30 5 5"
+"ButtonHilight"="120 20 20"
+"ButtonLight"="90 18 18"
+
+; --- Additional UI Elements for consistency ---
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\DWM]
+"ColorPrevalence"=dword:00000001
+"AccentColor"=dword:00241496
+"ColorizationColor"=dword:c4241496
+"ColorizationAfterglow"=dword:c4241496
+"ColorizationColorBalance"=dword:00000064
+"EnableWindowColorization"=dword:00000001
+
+; --- Accent colors for Start/Menu/Taskbar ---
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Accent]
+"AccentColorMenu"=dword:00241496
+"AccentPaletteKey"="Start/TaskbarAl"
+"StartColorMenu"=dword:00241496
+"AccentColorInactive"=dword:00781414
+
+; --- Explorer Background Color (Desktop and File Explorer) ---
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Accent]
+"AccentColor"=dword:00241496
+
+; --- Title bar Transparency Switching (optional) ---
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize]
+"SystemUsesLightTheme"=dword:00000000
+"AppsUseLightTheme"=dword:00000000
+"EnableTransparency"=dword:00000001
+
+; --- Fix for Sidebar and Navigation elements ---
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Personalize]
+"ColorPrevalence"=dword:00000001
+
+; --- Force app elements to use dark mode ---
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Accent]
+"AccentColorMenu"=dword:00241496
